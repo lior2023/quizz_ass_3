@@ -2,10 +2,13 @@ import WebsiteScreen from '@/lib/components/website-screen';
 import { COURSE_WELCOME_TEXT } from '@/lib/config';
 import Image from 'next/image';
 import Link from 'next/link';
+import WDOMG from "@/app/wdomg/page";
+import React from "react";
 
 export default function Home() {
   return (
     <WebsiteScreen>
+      {/*<WDOMG/>*/}
       <div className="grid">
         <div className="center padding-2 text-xl">
           <span>

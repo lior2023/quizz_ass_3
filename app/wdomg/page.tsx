@@ -15,7 +15,8 @@ interface Content {
 export default async function WDOMG() {
 
   const databaseClient = getDatabaseClient();
-  const { data } = await databaseClient.from('wdomg_page').select(`title, intro_text, action_text, action_button_text`).limit(1).single();
+  const { data } = await databaseClient.from('wdomg_page').
+  select(`title, intro_text, action_text, action_button_text`).limit(1).single();
   if (!data) {
     return <div>Content not found</div>
   }
@@ -23,7 +24,6 @@ export default async function WDOMG() {
 
   return (
     <>
-
       <div id="navbar">
         <div className="container">
           Header
@@ -41,7 +41,6 @@ export default async function WDOMG() {
         <div className="container">
           <BudgetCards />
         </div>
-
         <div className="container">
           <div className="action-boxes">
             <div className="align-center">
