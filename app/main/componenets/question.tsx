@@ -1,7 +1,7 @@
 'use client'
 // src/App.tsx
 import React, { useState } from 'react';
-import '../globals.css';
+import './blablabla.css';
 
 // Mock Data
 const mockData = [
